@@ -1,0 +1,118 @@
+.login-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+}
+
+.login-bg {
+  position: absolute;
+  inset: 0;
+  background: url("https://picsum.photos/seed/netflix-bg/1920/1080") center / cover no-repeat;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.login-header {
+  position: relative;
+  padding: 1.5rem 4%;
+}
+
+.login-logo {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #e50914;
+  letter-spacing: 0.05em;
+}
+
+.login-main {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 3rem 4rem;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: #fff;
+}
+
+.login-error {
+  background: rgba(229, 9, 20, 0.15);
+  border: 1px solid #e50914;
+  color: #e50914;
+  padding: 0.6rem 0.9rem;
+  border-radius: 3px;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.login-label {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-bottom: -0.5rem;
+}
+
+.login-input {
+  background: #333;
+  border: 1px solid #555;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.85rem 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.login-input:focus {
+  border-color: #aaa;
+}
+
+.login-btn {
+  margin-top: 0.5rem;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-btn:hover {
+  background: #f40612;
+}
+
+.login-footer-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #737373;
+}
+
+.login-footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: underline 0.2s;
+}
+
+.login-footer-links a:hover {
+  text-decoration: underline;
+}

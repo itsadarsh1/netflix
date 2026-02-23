@@ -1,0 +1,97 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 4%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent);
+  transition: background 0.3s;
+}
+
+.navbar:hover {
+  background: rgba(20, 20, 20, 0.95);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-logo {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #e50914;
+  letter-spacing: 0.05em;
+  padding: 0;
+  font-family: inherit;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+  color: #fff;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid transparent;
+  padding: 0.25rem 0.5rem;
+  transition: border 0.2s, background 0.2s;
+}
+
+.search-bar.open {
+  border-color: #fff;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.search-bar input {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 0.875rem;
+  width: 180px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 0.25rem;
+}
+
+.navbar-avatar {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
