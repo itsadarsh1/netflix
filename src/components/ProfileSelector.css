@@ -1,0 +1,89 @@
+.profile-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #141414;
+  gap: 2rem;
+}
+
+.profile-heading {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+}
+
+.profile-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #808080;
+  transition: color 0.2s;
+  padding: 0;
+}
+
+.profile-card:hover,
+.profile-card.hovered {
+  color: #fff;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  transition: border 0.2s;
+  border: 3px solid transparent;
+}
+
+.profile-card:hover .profile-avatar,
+.profile-card.hovered .profile-avatar {
+  border-color: #fff;
+}
+
+.add-avatar {
+  background: #333;
+  color: #808080;
+  font-size: 2.5rem;
+}
+
+.profile-card.add-profile:hover .add-avatar {
+  color: #fff;
+}
+
+.profile-name {
+  font-size: 0.95rem;
+}
+
+.manage-profiles-btn {
+  background: none;
+  border: 1px solid #808080;
+  color: #808080;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.manage-profiles-btn:hover {
+  color: #fff;
+  border-color: #fff;
+}

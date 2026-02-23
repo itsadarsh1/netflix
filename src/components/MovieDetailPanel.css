@@ -1,0 +1,145 @@
+/* Semi-transparent backdrop — does NOT cover the entire screen with a solid overlay */
+.detail-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 200;
+  cursor: pointer;
+}
+
+/* Compact panel slides in from the right — NOT full-screen */
+.detail-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(420px, 92vw);
+  height: 100vh;
+  background: #181818;
+  z-index: 201;
+  overflow-y: auto;
+  box-shadow: -4px 0 32px rgba(0, 0, 0, 0.7);
+  animation: slide-in 0.25s ease;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.detail-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.detail-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.detail-backdrop-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-body {
+  padding: 1.25rem 1.5rem 2rem;
+}
+
+.detail-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 0.75rem;
+}
+
+.detail-score {
+  color: #46d369;
+  font-weight: 600;
+}
+
+.detail-rating-badge {
+  border: 1px solid #aaa;
+  padding: 0 0.3rem;
+  border-radius: 2px;
+  font-size: 0.75rem;
+}
+
+.detail-description {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #ccc;
+  margin: 0 0 1rem;
+}
+
+.detail-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.detail-genre-tag {
+  font-size: 0.75rem;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.2rem 0.6rem;
+  border-radius: 99px;
+  color: #ddd;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn-play-panel,
+.btn-add {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-play-panel:hover,
+.btn-add:hover {
+  opacity: 0.8;
+}
+
+.btn-play-panel {
+  background: #fff;
+  color: #000;
+}
+
+.btn-add {
+  background: rgba(109, 109, 110, 0.7);
+  color: #fff;
+}

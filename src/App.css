@@ -1,0 +1,12 @@
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  background: #141414;
+  min-height: 100vh;
+}
+
+.rows {
+  padding-bottom: 4rem;
+}
