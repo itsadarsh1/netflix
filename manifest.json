@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Netflix UI Cleaner",
+  "version": "1.0",
+  "description": "Removes household verification and full-screen modals.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.netflix.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
